@@ -212,6 +212,15 @@
       <p class="section-subtitle reveal">Sample packages inspired by your design. You can easily swap these with your real package names, routes, and prices.</p>
       <div class="packages-grid" id="packageGrid"></div>
       <div class="note-box reveal">
+        <strong>Included:-</strong><br>
+        All Sightseeing<br>
+        All Toll &amp; Parking (Kerala)<br>
+        Driver Bata<br>
+        Driver Food &amp; Stay<br>
+        Fuel Expenses<br>
+        Pick up &amp; Drop
+      </div>
+      <div class="note-box reveal">
         <strong>Note:</strong> Please check the vehicle kilometer reading after entering the car. Extra usage will be charged as per standard rates.
       </div>
     </div>
@@ -260,6 +269,14 @@
           <input required type="text" placeholder="Your name" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
           <input required type="tel" placeholder="Phone number" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
           <input type="text" placeholder="Destination / package" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input type="number" min="1" placeholder="No. of passengers" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input type="number" min="1" placeholder="No. of days" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <select style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;background:#fff;">
+            <option value="" selected disabled>Select vehicle</option>
+            <option>Sedan</option>
+            <option>SUV / MUV</option>
+            <option>Tempo Traveller</option>
+          </select>
           <textarea rows="4" placeholder="Trip details" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;resize:vertical;"></textarea>
           <button class="btn btn-primary" type="submit">Send Enquiry</button>
         </form>
