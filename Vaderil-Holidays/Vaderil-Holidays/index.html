@@ -267,19 +267,19 @@
       <div class="contact-card reveal">
         <h3>Quick Enquiry</h3>
         <form id="enquiryForm" class="contact-list">
-          <input required type="text" placeholder="Your name" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
-          <input required type="tel" placeholder="Phone number" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
-          <input type="text" placeholder="Destination / package" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
-          <input type="number" min="1" placeholder="No. of passengers" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
-          <input type="number" min="1" placeholder="No. of days" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
-          <select style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;background:#fff;">
+          <input id="enquiryName" name="name" required type="text" placeholder="Your name" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input id="enquiryPhone" name="phone" required type="tel" placeholder="Phone number" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input id="enquiryDestination" name="destination" type="text" placeholder="Destination / package" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input id="enquiryPassengers" name="passengers" type="number" min="1" placeholder="No. of passengers" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input id="enquiryDays" name="days" type="number" min="1" placeholder="No. of days" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <select id="enquiryVehicle" name="vehicle" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;background:#fff;">
             <option value="" selected disabled>Select vehicle</option>
             <option>Sedan</option>
             <option>SUV / MUV</option>
             <option>Tempo Traveller</option>
           </select>
-          <textarea rows="4" placeholder="Trip details" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;resize:vertical;"></textarea>
-          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+          <textarea id="enquiryDetails" name="details" rows="4" placeholder="Trip details" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;resize:vertical;"></textarea>
+          <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
         </form>
         <p id="formMessage" style="margin-top:14px;color:var(--primary-dark);font-weight:700;"></p>
       </div>

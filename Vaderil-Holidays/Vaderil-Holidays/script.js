@@ -101,8 +101,36 @@
 
     const enquiryForm = document.getElementById('enquiryForm');
     const formMessage = document.getElementById('formMessage');
+    const whatsappNumber = '917012305403';
+
     enquiryForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    formMessage.textContent = 'Thanks! Your enquiry has been recorded. Connect this form to WhatsApp, email, or a backend to receive live enquiries.';
+
+    const formData = new FormData(enquiryForm);
+    const name = (formData.get('name') || '').toString().trim();
+    const phone = (formData.get('phone') || '').toString().trim();
+    const destination = (formData.get('destination') || '').toString().trim();
+    const passengers = (formData.get('passengers') || '').toString().trim();
+    const days = (formData.get('days') || '').toString().trim();
+    const vehicle = (formData.get('vehicle') || '').toString().trim();
+    const details = (formData.get('details') || '').toString().trim();
+
+    const lines = [
+        'Hi Vaderil Holidays, I would like a quick enquiry.',
+        `Name: ${name}`,
+        `Phone: ${phone}`,
+        `Destination / Package: ${destination || '-'}`,
+        `Passengers: ${passengers || '-'}`,
+        `Days: ${days || '-'}`,
+        `Vehicle: ${vehicle || '-'}`,
+        `Trip Details: ${details || '-'}`
+    ];
+
+    const message = encodeURIComponent(lines.join('\n'));
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    window.open(whatsappUrl, '_blank', 'noopener');
+
+    formMessage.textContent = 'Redirecting to WhatsApp with your enquiry details...';
     enquiryForm.reset();
 });
