@@ -545,6 +545,35 @@ button {
     font-size: 0.92rem;
 }
 
+.included-box {
+    background: linear-gradient(135deg, #1aaf67 0%, #12834c 100%);
+    border: 1px solid #0f6d3f;
+    color: #f4fff8;
+    box-shadow: 0 12px 26px rgba(18, 131, 76, 0.2);
+}
+
+.included-box strong {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+}
+
+.included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+}
+
+.included-list li::before {
+    content: "✓";
+    font-weight: 700;
+    margin-right: 8px;
+}
+
 .vehicles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
