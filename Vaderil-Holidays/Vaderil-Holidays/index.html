@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaderil Holidays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link  rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <div class="brand-mark">✈</div>
+      <div>
+        Vaderil Holidays
+        <small>Kerala Tours & Travel</small>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#packages">Packages</a>
+      <a href="#vehicles">Taxi</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="#packages">View Packages</a>
+      <a class="btn btn-primary" href="#contact">Call for Best Deals</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-card reveal">
+        <div class="hero-content">
+          <span class="eyebrow">Customized Kerala Trips</span>
+          <h1>Discover Kerala,<br>Your Way</h1>
+          <p>
+            Explore misty hills, backwaters, waterfalls, beaches, and family-friendly escapes with personalized tour packages, trusted drivers, and comfortable travel options.
+          </p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="#packages" class="btn btn-primary">Customized Packages</a>
+            <a href="#contact" class="btn btn-outline">Plan My Trip</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>500+</strong>
+              Happy travelers
+            </div>
+            <div class="stat">
+              <strong>50+</strong>
+              Curated routes
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              Travel support
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="info-card reveal" id="about">
+          <h3>About Us</h3>
+          <p class="about-text">
+            Vaderil Holidays is a Kerala-based travel service specializing in customized tour packages, taxi services, and premium travel experiences. With years of experience and customer-first service, we make every journey comfortable, safe, and memorable.
+          </p>
+        </div>
+
+        <div class="info-card reveal">
+          <h3>Quick Highlights</h3>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">✓</div>
+              <div>Transparent pricing with flexible travel itineraries.</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✓</div>
+              <div>Well-maintained vehicles and experienced drivers.</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✓</div>
+              <div>Honeymoon, family, and sightseeing packages across Kerala.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Our Services</h2>
+      <p class="section-subtitle reveal">Everything you need for a smooth Kerala trip, from curated stays and sightseeing to local taxi and tempo traveller support.</p>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="icon-wrap">🧭</div>
+          <h4>Kerala Tour Packages</h4>
+          <p>Carefully planned trips covering top hill stations, backwaters, beaches, and heritage spots.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon-wrap">🚕</div>
+          <h4>Taxi & Tempo Traveller</h4>
+          <p>Comfortable travel options for solo guests, families, and larger groups across Kerala.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon-wrap">💚</div>
+          <h4>Honeymoon & Family Trips</h4>
+          <p>Specially designed journeys for couples, families, and relaxed vacation experiences.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <div class="container">
+      <h2 class="section-title reveal">Popular Destinations</h2>
+      <div class="destinations-grid">
+        <article class="destination-card reveal">
+          <img src="images/munnar.jpg" alt="Munnar" />
+          <div class="destination-body"><div class="destination-caption">Munnar</div><span>Tea gardens & cool weather</span></div>
+        </article>
+        <article class="destination-card reveal">
+          <img src="images/thekkadi.jpg" alt="Thekkady" />
+          <div class="destination-body"><div class="destination-caption">Thekkady</div><span>Wildlife & spice plantations</span></div>
+        </article>
+        <article class="destination-card reveal">
+          <img src="images/alapuzha.jpg" alt="Alappuzha Houseboat" />
+          <div class="destination-body"><div class="destination-caption">Alappuzha</div><span>Backwater houseboat stays</span></div>
+        </article>
+        <article class="destination-card reveal">
+          <img src="https://images.unsplash.com/photo-1587922546307-776227941871?auto=format&fit=crop&w=800&q=80" alt="Varkala" />
+          <div class="destination-body"><div class="destination-caption">Varkala</div><span>Cliff beach & sunset views</span></div>
+        </article>
+        <article class="destination-card reveal">
+          <img src="images/trivandrum.jpg" alt="Trivandrum" />
+          <div class="destination-body"><div class="destination-caption">Trivandrum</div><span>City, temple & coast</span></div>
+        </article>
+        <article class="destination-card reveal">
+          <img src="images/athirapally.jpg" alt="Athirappilly" />
+          <div class="destination-body"><div class="destination-caption">Athirappilly</div><span>Iconic waterfalls</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="container">
+      <div class="why-box reveal">
+        <h2 class="section-title" style="margin-bottom:22px;">Why Choose Us</h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-bullet">✓</div>
+            <div>
+              <strong>Transparent Pricing</strong>
+              <p>Clear package details and straightforward pricing without hidden surprises.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-bullet">✓</div>
+            <div>
+              <strong>Well-Maintained Vehicles</strong>
+              <p>Clean, reliable cars and tempo travellers for a comfortable journey.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-bullet">✓</div>
+            <div>
+              <strong>Experienced Drivers</strong>
+              <p>Local drivers who know the routes, timing, and best stopovers.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-bullet">✓</div>
+            <div>
+              <strong>Flexible Itinerary</strong>
+              <p>Trips that can be adjusted for couples, families, groups, and custom needs.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-bullet">✓</div>
+            <div>
+              <strong>24/7 Support</strong>
+              <p>Responsive support before and during your trip for a smoother experience.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-bullet">✓</div>
+            <div>
+              <strong>Local Expertise</strong>
+              <p>Destination guidance, route suggestions, and planning support from locals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <div class="container">
+      <h2 class="section-title reveal">Packages Page</h2>
+      <p class="section-subtitle reveal">Sample packages inspired by your design. You can easily swap these with your real package names, routes, and prices.</p>
+      <div class="packages-grid" id="packageGrid"></div>
+      <div class="note-box reveal">
+        <strong>Note:</strong> Please check the vehicle kilometer reading after entering the car. Extra usage will be charged as per standard rates.
+      </div>
+    </div>
+  </section>
+
+  <section class="vehicles" id="vehicles">
+    <div class="container">
+      <h2 class="section-title reveal">Taxis & Vehicles</h2>
+      <div class="vehicles-grid" id="vehicleGrid"></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-card reveal">
+        <h3>Contact Us</h3>
+        <p>Let us help you build your Kerala trip with the right package, vehicle, and itinerary.</p>
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Address</strong><br>
+              Iripuram - Mannoor Road, Kerala
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Phone</strong><br>
+              +91 7012305403
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <strong>Website</strong><br>
+              <a target="_blank" href="http://vaderilholidays.com">www.vaderilholidays.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card reveal">
+        <h3>Quick Enquiry</h3>
+        <form id="enquiryForm" class="contact-list">
+          <input required type="text" placeholder="Your name" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input required type="tel" placeholder="Phone number" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <input type="text" placeholder="Destination / package" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;">
+          <textarea rows="4" placeholder="Trip details" style="padding:14px 16px;border-radius:14px;border:1px solid var(--border);font:inherit;outline:none;resize:vertical;"></textarea>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        </form>
+        <p id="formMessage" style="margin-top:14px;color:var(--primary-dark);font-weight:700;"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#packages">Packages</a>
+      <a href="#vehicles">Taxi</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>© <span id="year"></span> Vaderil Holidays</div>
+    <div class="social-links">
+      <a href="#">Instagram: @vaderil_holidays</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
