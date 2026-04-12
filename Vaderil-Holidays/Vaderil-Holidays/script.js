@@ -1,12 +1,12 @@
     const packages = [
     {
-        title: '5 Days – Munnar, Thekkady, Alappuzha',
+        title: '5 Days 4 Nights Kochi–Munnar–Thekkady–Alappuzha–Kochi',
         image: 'https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1200&q=80',
-        days: '5 Days',
-        pickup: '1,200 km',
-        travel: 'Included',
-        price: '₹ 9,999',
-        description: 'A classic Kerala route with tea gardens, wildlife experiences, and a backwater stay.'
+        days: '5 Days / 4 Nights',
+        pickup: '550 km',
+        travel: 'All Sightseeing Included',
+        price: '₹ 11,800',
+        description: 'Day 1: Arrival at Cochin Airport/Railway Station, drive to Munnar, en route Valara & Cheeyappara waterfalls and spice plantation, overnight at Munnar. Day 2: Munnar sightseeing—tea plantations, Chithirapuram viewpoint, Rajamalai (Eravikulam National Park), Tea Museum, Rose Garden, Mattupetty Dam, and Echo Point. Day 3: Drive to Thekkady after breakfast; visit Periyar Wildlife Sanctuary, spice plantations, cultural show center, and elephant camp; overnight at Thekkady. Day 4: Drive to Alappuzha and board houseboat for overnight backwater journey. Day 5: Visit Fort Kochi Beach and Chinese Fishing Nets, then drop at airport/railway station.'
     },
     {
         title: '5 Days – Athirappilly, Munnar, Thekkady, Alappuzha',
