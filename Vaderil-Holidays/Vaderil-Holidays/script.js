@@ -1,39 +1,67 @@
     const packages = [
     {
-        title: '5 Days 4 Nights Kochi–Munnar–Thekkady–Alappuzha–Kochi',
-        image: 'https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1200&q=80',
+        title: '5 Days – Munnar, Thekkady, Alappuzha',
         days: '5 Days / 4 Nights',
-        pickup: '550 km',
-        travel: 'All Sightseeing Included',
-        price: '₹ 11,800',
-        description: 'Day 1: Arrival at Cochin Airport/Railway Station, drive to Munnar, en route Valara & Cheeyappara waterfalls and spice plantation, overnight at Munnar. Day 2: Munnar sightseeing—tea plantations, Chithirapuram viewpoint, Rajamalai (Eravikulam National Park), Tea Museum, Rose Garden, Mattupetty Dam, and Echo Point. Day 3: Drive to Thekkady after breakfast; visit Periyar Wildlife Sanctuary, spice plantations, cultural show center, and elephant camp; overnight at Thekkady. Day 4: Drive to Alappuzha and board houseboat for overnight backwater journey. Day 5: Visit Fort Kochi Beach and Chinese Fishing Nets, then drop at airport/railway station.'
+        pickup: '550 Kms',
+        travel: 'All Sightseeing',
+        price: '₹11,800',
+        badge: 'Most Popular',
+        routeTags: ['Cochin', 'Munnar', 'Thekkady', 'Alleppey'],
+        itinerary: [
+            'Day 1: Arrival at Cochin and drive to Munnar.',
+            'Day 2: Munnar sightseeing with tea gardens and local viewpoints.',
+            'Day 3: Drive to Thekkady and explore wildlife and spice plantations.',
+            'Day 4: Drive to Alappuzha for a backwater experience.',
+            'Day 5: Return for departure.'
+        ]
     },
     {
         title: '5 Days – Athirappilly, Munnar, Thekkady, Alappuzha',
-        image: 'images/thekkadi.jpg',
-        days: '5 Days',
-        pickup: '1,000 km',
-        travel: 'Included',
-        price: '₹ 9,999',
-        description: 'Blend waterfalls, cool hill stations, forest routes, and backwater views in one itinerary.'
+        days: '5 Days / 4 Nights',
+        pickup: '650 Kms',
+        travel: 'All Sightseeing',
+        price: '₹13,400',
+        badge: 'Waterfalls',
+        routeTags: ['Athirappilly', 'Munnar', 'Alleppey'],
+        itinerary: [
+            'Day 1: Athirappilly waterfalls and nearby sightseeing.',
+            'Day 2: Drive to Munnar and explore tea plantation areas.',
+            'Day 3: Continue to Thekkady for wildlife and cultural activities.',
+            'Day 4: Move to Alappuzha and enjoy backwater views.',
+            'Day 5: Departure transfer.'
+        ]
     },
     {
         title: '7 Days – Munnar, Thekkady, Alappuzha, Varkala, Trivandrum',
-        image: 'https://images.unsplash.com/photo-1587922546307-776227941871?auto=format&fit=crop&w=1200&q=80',
-        days: '7 Days',
-        pickup: '1,000 km',
-        travel: 'Included',
-        price: '₹ 14,999',
-        description: 'A longer scenic Kerala journey across hills, backwaters, beaches, and city highlights.'
+        days: '7 Days / 6 Nights',
+        pickup: '950 Kms',
+        travel: 'All Sightseeing',
+        price: '₹19,400',
+        badge: '',
+        routeTags: ['Cochin', 'Munnar', 'Thekkady', 'Alleppey', 'Varkala', 'Trivandrum'],
+        itinerary: [
+            'Day 1-2: Cochin to Munnar sightseeing and stay.',
+            'Day 3: Thekkady wildlife and spice plantations.',
+            'Day 4: Alappuzha backwater experience.',
+            'Day 5: Varkala beach and cliff views.',
+            'Day 6-7: Trivandrum city highlights and departure.'
+        ]
     },
     {
         title: '5 Days 4 Nights Kochi–Munnar–Thekkady–Alappuzha–Kochi',
-        image: 'images/alapuzha.jpg',
         days: '5 Days / 4 Nights',
-        pickup: '550 km',
+        pickup: '550 Kms',
         travel: 'All Sightseeing Included',
-        price: '₹ 11,800',
-        description: 'Day 1: Arrival at Cochin Airport/Railway Station and drive to Munnar with en route visits to Valara & Cheeyappara waterfalls and a spice plantation. Day 2: Munnar sightseeing—tea plantations, Chithirapuram viewpoint, Rajamalai (Eravikulam National Park), Tea Museum, Rose Garden, Mattupetty Dam, and Echo Point. Day 3: Drive to Thekkady and visit Periyar Wildlife Sanctuary, spice plantations, cultural show center, and elephant camp. Day 4: Drive to Alappuzha and board a houseboat for an overnight backwater journey. Day 5: Visit Fort Kochi Beach and Chinese Fishing Nets, then drop at airport/railway station.'
+        price: '₹11,800',
+        badge: 'Most Popular',
+        routeTags: ['Kochi', 'Munnar', 'Thekkady', 'Alappuzha', 'Kochi'],
+        itinerary: [
+            'Day 1: On arrival at Cochin Airport or Railway Station, our driver-cum-guide welcomes you and drives to Munnar. En route visit Valara and Cheeyappara waterfalls and a spice plantation. Overnight stay at Munnar resort/hotel.',
+            'Day 2: Morning pickup for Munnar sightseeing: Tea Plantations, Chithirapuram viewpoint, Rajamalai (Eravikulam National Park), Tea Museum, Rose Garden, Mattupetty Dam, and Echo Point. Drop back to Munnar resort/hotel.',
+            'Day 3: Morning pickup after breakfast and drive to Thekkady. Check-in at hotel. Sightseeing includes Periyar Wildlife Sanctuary, spice plantations, Cultural Show Center, and elephant camp. Overnight at Thekkady.',
+            'Day 4: Morning pickup after breakfast and drive to Alleppey. Drop at the houseboat for overnight backwater journey.',
+            'Day 5: Morning pickup after breakfast. Visit Fort Kochi Beach and Chinese Fishing Nets. Drop at airport or railway station for onward journey.'
+        ]
     }
     ];
 
@@ -58,21 +86,34 @@
     const packageGrid = document.getElementById('packageGrid');
     const vehicleGrid = document.getElementById('vehicleGrid');
 
-    packageGrid.innerHTML = packages.map(pkg => `
+    packageGrid.innerHTML = packages.map((pkg, index) => `
     <article class="package-card reveal">
-        <img src="${pkg.image}" alt="${pkg.title}">
-            <div class="package-body">
-                <h4>${pkg.title}</h4>
+            <div class="package-head">
+                <div>
+                    <h4>${pkg.title}</h4>
+                    <p class="days-text">${pkg.days}</p>
+                </div>
+                ${pkg.badge ? `<span class="badge">${pkg.badge}</span>` : ''}
                 <div class="package-meta">
-                    <span class="chip">${pkg.days}</span>
-                    <span class="chip">Pickup: ${pkg.pickup}</span>
-                    <span class="chip">Travel: ${pkg.travel}</span>
+                    ${pkg.routeTags.map(tag => `<span class="chip">${tag}</span>`).join('')}
                 </div>
-                <p>${pkg.description}</p>
+            </div>
+            <div class="package-body">
+                <div class="package-inclusions">
+                    <span>🚗 Pickup & Drop</span>
+                    <span>🗺️ All Sightseeing</span>
+                    <span>🅿️ Toll & Parking</span>
+                    <span>👤 Driver Bata</span>
+                    <span>⛽ Fuel Expense</span>
+                </div>
+                <a href="#" class="itinerary-link" data-package-index="${index}">▼ View Itinerary</a>
                 <div class="package-footer">
-                    <div class="price">${pkg.price}</div>
-                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                    <div class="price-wrap">
+                        <div class="price">${pkg.price}</div>
+                        <div class="kms">${pkg.pickup}</div>
+                    </div>
                 </div>
+                <a href="#contact" class="btn btn-primary">View Itinerary</a>
             </div>
     </article>
     `).join('');
@@ -111,6 +152,34 @@
     const enquiryForm = document.getElementById('enquiryForm');
     const formMessage = document.getElementById('formMessage');
     const whatsappNumber = '917012305403';
+    const itineraryModal = document.getElementById('itineraryModal');
+    const itineraryTitle = document.getElementById('itineraryModalTitle');
+    const itineraryContent = document.getElementById('itineraryModalContent');
+    const closeItineraryModal = document.getElementById('closeItineraryModal');
+
+    packageGrid.addEventListener('click', (event) => {
+    const itineraryLink = event.target.closest('.itinerary-link');
+    if (!itineraryLink) return;
+
+    event.preventDefault();
+    const index = Number(itineraryLink.dataset.packageIndex);
+    const selectedPackage = packages[index];
+    if (!selectedPackage) return;
+
+    itineraryTitle.textContent = selectedPackage.title;
+    itineraryContent.innerHTML = selectedPackage.itinerary.map(day => `<p>${day}</p>`).join('');
+    itineraryModal.classList.add('open');
+});
+
+    closeItineraryModal.addEventListener('click', () => {
+    itineraryModal.classList.remove('open');
+});
+
+    itineraryModal.addEventListener('click', (event) => {
+    if (event.target === itineraryModal) {
+        itineraryModal.classList.remove('open');
+    }
+});
 
     enquiryForm.addEventListener('submit', (e) => {
     e.preventDefault();
