@@ -113,7 +113,7 @@
                         <div class="kms">${pkg.pickup}</div>
                     </div>
                 </div>
-                <a href="#contact" class="btn btn-primary">View Itinerary</a>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
             </div>
     </article>
     `).join('');

@@ -471,8 +471,8 @@ button {
 }
 
 .packages-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -481,6 +481,8 @@ button {
     display: flex;
     flex-direction: column;
     border-radius: 24px;
+    flex: 1 1 calc(50% - 10px);
+    min-width: 320px;
 }
 
 .package-body {
@@ -808,6 +810,11 @@ button {
     .contact-grid,
     .why-grid {
         grid-template-columns: 1fr;
+    }
+
+    .packages-grid {
+        display: flex;
+        flex-direction: column;
     }
 
     .destinations-grid { grid-template-columns: repeat(2, 1fr); }
