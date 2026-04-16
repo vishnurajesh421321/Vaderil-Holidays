@@ -493,7 +493,7 @@ button {
 }
 
 .package-head {
-    background: #0f5b38;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     color: #fff;
     padding: 20px 22px 16px;
     position: relative;
@@ -549,7 +549,7 @@ button {
 
 .itinerary-link {
     margin-top: 14px;
-    color: #2f6650;
+    color: var(--primary-dark);
     font-weight: 700;
     text-decoration: underline;
 }
@@ -572,7 +572,7 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 2rem;
-    color: #0f5b38;
+    color: var(--primary-dark);
 }
 
 .kms {
@@ -582,7 +582,7 @@ button {
 
 .package-body .btn {
     margin-top: 10px;
-    background: #2d7b59;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     box-shadow: none;
 }
 
@@ -617,7 +617,7 @@ button {
     padding: 0;
     position: relative;
     box-shadow: 0 24px 70px rgba(8, 36, 30, 0.24);
-    border: 1px solid rgba(15, 91, 56, 0.1);
+    border: 1px solid rgba(100, 143, 53, 0.2);
 }
 
 .itinerary-modal-close {
@@ -628,10 +628,10 @@ button {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: 1px solid rgba(15, 91, 56, 0.14);
+    border: 1px solid rgba(100, 143, 53, 0.22);
     background: rgba(255,255,255,0.92);
     font-size: 1.1rem;
-    color: #1f4739;
+    color: var(--primary-dark);
     z-index: 5;
 }
 
@@ -657,7 +657,7 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     letter-spacing: 0.08em;
-    color: #0f5b38;
+    color: var(--primary-dark);
     font-size: 0.92rem;
 }
 
@@ -674,7 +674,7 @@ button {
 .pdf-itinerary-hero {
     margin: 14px 22px 0;
     border-radius: 26px;
-    background: linear-gradient(135deg, #0f5b38 0%, #17734a 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     color: #fff;
     padding: 26px;
     display: grid;
