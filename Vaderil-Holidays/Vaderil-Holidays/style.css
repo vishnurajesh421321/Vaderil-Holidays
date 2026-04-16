@@ -804,7 +804,7 @@ button {
     border-radius: 18px;
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, #0f5b38 0%, #1f8f5a 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -1127,7 +1127,7 @@ button {
 }
 
 .pdf-rate-table thead th {
-    background: #0f5b38;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     color: #fff;
     text-align: left;
     padding: 14px 16px;
