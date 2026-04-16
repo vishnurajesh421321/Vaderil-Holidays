@@ -586,15 +586,22 @@ button {
     box-shadow: none;
 }
 
+.balance-note {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #5d6668;
+}
+
 .itinerary-modal {
     position: fixed;
     inset: 0;
-    background: rgba(8, 23, 30, 0.55);
+    background: rgba(7, 20, 22, 0.68);
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 100;
-    padding: 16px;
+    padding: 20px;
+    backdrop-filter: blur(6px);
 }
 
 .itinerary-modal.open {
@@ -602,37 +609,298 @@ button {
 }
 
 .itinerary-modal-content {
-    width: min(760px, 100%);
-    max-height: 85vh;
+    width: min(940px, 100%);
+    max-height: 90vh;
     overflow: auto;
-    background: #fff;
-    border-radius: 18px;
-    padding: 22px;
+    background: #f8fcfa;
+    border-radius: 28px;
+    padding: 0;
     position: relative;
+    box-shadow: 0 24px 70px rgba(8, 36, 30, 0.24);
+    border: 1px solid rgba(15, 91, 56, 0.1);
 }
 
 .itinerary-modal-close {
-    position: absolute;
-    right: 12px;
-    top: 10px;
-    border: 0;
-    background: transparent;
-    font-size: 1.35rem;
-    color: #3a4346;
+    position: sticky;
+    top: 14px;
+    float: right;
+    margin: 14px 14px 0 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(15, 91, 56, 0.14);
+    background: rgba(255,255,255,0.92);
+    font-size: 1.1rem;
+    color: #1f4739;
+    z-index: 5;
 }
 
-.itinerary-modal-content h3 {
-    margin: 4px 0 14px;
-    color: #0f5b38;
+.itinerary-modal-body {
+    padding: 0;
+}
+
+.pdf-itinerary-sheet {
+    background: linear-gradient(180deg, #f7fcfa 0%, #ffffff 100%);
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.pdf-itinerary-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 22px 26px 0;
+}
+
+.pdf-brand {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #0f5b38;
+    font-size: 0.92rem;
 }
 
-.itinerary-modal-body p {
-    margin: 0 0 10px;
-    color: #384346;
+.pdf-sheet-badge {
+    background: #f7a600;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pdf-itinerary-hero {
+    margin: 14px 22px 0;
+    border-radius: 26px;
+    background: linear-gradient(135deg, #0f5b38 0%, #17734a 100%);
+    color: #fff;
+    padding: 26px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+    align-items: end;
+}
+
+.pdf-route-label {
+    margin: 0 0 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.72);
+}
+
+.pdf-itinerary-hero h3 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    line-height: 1.2;
+    color: #fff;
+}
+
+.pdf-subline {
+    margin: 10px 0 0;
+    color: rgba(255,255,255,0.82);
+    font-weight: 500;
+}
+
+.pdf-route-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.pdf-route-tags span {
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #eef8f3;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.pdf-price-box {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 22px;
+    padding: 18px;
+    text-align: right;
+    backdrop-filter: blur(6px);
+}
+
+.pdf-price-label {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 6px;
+}
+
+.pdf-price-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.pdf-km-value {
+    margin-top: 8px;
+    color: rgba(255,255,255,0.82);
+    font-weight: 600;
+}
+
+.pdf-inclusion-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px 22px 8px;
+}
+
+.pdf-inclusion-strip span {
+    padding: 10px 14px;
+    background: #eaf6f0;
+    color: #205842;
+    border: 1px solid #d6ebe0;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.pdf-section {
+    padding: 14px 22px 0;
+}
+
+.pdf-section h4,
+.pdf-note-card h4 {
+    margin: 0 0 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #0f5b38;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.pdf-day-list {
+    display: grid;
+    gap: 14px;
+}
+
+.pdf-day-card {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    gap: 14px;
+    align-items: start;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #dde9e3;
+    border-radius: 20px;
+    box-shadow: 0 10px 24px rgba(15, 91, 56, 0.05);
+}
+
+.pdf-day-number {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #0f5b38 0%, #1f8f5a 100%);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.pdf-day-content h5 {
+    margin: 0 0 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #17372d;
+}
+
+.pdf-day-content p {
+    margin: 0;
+    color: #4e5d5b;
+    line-height: 1.7;
+    font-size: 0.96rem;
+}
+
+.pdf-note-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px 22px 24px;
+}
+
+.pdf-note-card {
+    background: #fffdf6;
+    border: 1px solid #f0e2b6;
+    border-radius: 22px;
+    padding: 18px;
+}
+
+.pdf-note-card-green {
+    background: linear-gradient(135deg, #1aaf67 0%, #12834c 100%);
+    border-color: #0f6d3f;
+    color: #f4fff8;
+}
+
+.pdf-note-card-green h4 {
+    color: #fff;
+}
+
+.pdf-note-card ul {
+    margin: 0;
+    padding-left: 18px;
+    display: grid;
+    gap: 8px;
     line-height: 1.6;
+    color: inherit;
 }
 
+.pdf-footer-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 22px 24px;
+}
+
+.pdf-footer-bar span {
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #edf7f2;
+    color: #1d5f46;
+    border: 1px solid #d6ebe0;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+@media (max-width: 760px) {
+    .itinerary-modal-content {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .pdf-itinerary-hero,
+    .pdf-note-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pdf-price-box {
+        text-align: left;
+    }
+
+    .pdf-day-card {
+        grid-template-columns: 1fr;
+    }
+
+    .pdf-day-number {
+        width: 50px;
+        height: 50px;
+        border-radius: 16px;
+    }
+}
 .note-box {
     margin-top: 18px;
     padding: 16px 18px;

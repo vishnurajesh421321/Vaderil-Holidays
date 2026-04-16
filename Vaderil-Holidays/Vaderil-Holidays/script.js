@@ -1,4 +1,4 @@
-    const packages = [
+const packages = [
     {
         title: '5 Days – Munnar, Thekkady, Alappuzha',
         days: '5 Days / 4 Nights',
@@ -6,13 +6,13 @@
         travel: 'All Sightseeing',
         price: '₹11,800',
         badge: 'Most Popular',
-        routeTags: ['Cochin', 'Munnar', 'Thekkady', 'Alleppey'],
+        routeTags: ['Kochi', 'Munnar', 'Thekkady', 'Alappuzha'],
         itinerary: [
-            'Day 1: Arrival at Cochin and drive to Munnar.',
-            'Day 2: Munnar sightseeing with tea gardens and local viewpoints.',
-            'Day 3: Drive to Thekkady and explore wildlife and spice plantations.',
-            'Day 4: Drive to Alappuzha for a backwater experience.',
-            'Day 5: Return for departure.'
+            'Day 1: Pickup from Kochi Airport, Railway Station, or hotel and drive to Munnar. En route visit Cheeyappara and Valara Waterfalls and a spice plantation. Overnight stay at Munnar.',
+            'Day 2: Full day Munnar sightseeing including Eravikulam National Park, Tea Museum, Rose Garden, Photo Point, Mattupetty Dam, Echo Point, and sunset viewpoints. Overnight stay at Munnar.',
+            'Day 3: Drive to Thekkady and visit Periyar Wildlife Sanctuary and Periyar Lake boating. Optional elephant ride, spice plantation visit, and cultural shows. Overnight stay at Thekkady.',
+            'Day 4: Drive to Alappuzha and check in to a houseboat or hotel. Enjoy village life, canal cruise, sunset in backwaters, and optional Shikara ride. Overnight stay at Alappuzha.',
+            'Day 5: Drive back to Kochi. Optional Fort Kochi, Chinese Fishing Nets, and Marine Drive. Drop at Kochi Airport, Railway Station, or hotel.'
         ]
     },
     {
@@ -22,48 +22,87 @@
         travel: 'All Sightseeing',
         price: '₹13,400',
         badge: 'Waterfalls',
-        routeTags: ['Athirappilly', 'Munnar', 'Alleppey'],
+        routeTags: ['Kochi', 'Athirappilly', 'Munnar', 'Thekkady', 'Alappuzha'],
         itinerary: [
-            'Day 1: Athirappilly waterfalls and nearby sightseeing.',
-            'Day 2: Drive to Munnar and explore tea plantation areas.',
-            'Day 3: Continue to Thekkady for wildlife and cultural activities.',
-            'Day 4: Move to Alappuzha and enjoy backwater views.',
-            'Day 5: Departure transfer.'
+            'Day 1: Pickup from Kochi Airport, Railway Station, or hotel and drive to Athirappilly Waterfalls, then continue to Munnar through scenic forest routes with spice plantation and tea garden views. Overnight stay at Munnar.',
+            'Day 2: Full day Munnar sightseeing with optional sunrise jeep safari, Eravikulam National Park, Tea Museum, Rose Garden, Photo Point, Mattupetty Dam, Echo Point, and evening sunset viewpoints. Overnight stay at Munnar.',
+            'Day 3: Drive to Thekkady. Visit Periyar Wildlife Sanctuary, enjoy boating in Periyar Lake, optional elephant ride or bath, and evening cultural shows including Kathakali and Kalaripayattu. Overnight stay at Thekkady.',
+            'Day 4: Drive to Alappuzha and check in to a houseboat or hotel. Experience village life, canal cruises, optional Shikara rides, and a serene backwater sunset. Overnight stay at Alappuzha.',
+            'Day 5: After breakfast drive back to Kochi for local sightseeing including Fort Kochi, Chinese Fishing Nets, and Marine Drive, then drop at Airport or Railway Station.'
         ]
     },
     {
-        title: '7 Days – Munnar, Thekkady, Alappuzha, Varkala, Trivandrum',
-        days: '7 Days / 6 Nights',
+        title: '6 Days – Munnar, Alappuzha, Varkala, Trivandrum',
+        days: '6 Days / 5 Nights',
+        pickup: '850 Kms',
+        travel: 'All Sightseeing',
+        price: '₹18,800',
+        badge: '',
+        routeTags: ['Kochi', 'Munnar', 'Alappuzha', 'Varkala', 'Trivandrum'],
+        itinerary: [
+            'Day 1: Pickup from Kochi Airport, Railway Station, or hotel and drive to Munnar. En route visit Cheeyappara and Valara Waterfalls, spice plantation, and tea garden views. Overnight stay at Munnar.',
+            'Day 2: Munnar sightseeing including optional sunrise jeep safari, Eravikulam National Park, Tea Museum, Rose Garden, Photo Point, Mattupetty Dam, Echo Point, and sunset viewpoints. Overnight stay at Munnar.',
+            'Day 3: Drive from Munnar to Alappuzha. Check in to houseboat or hotel and enjoy backwater village views, canal cruise, and optional Shikara ride. Overnight stay at Alappuzha.',
+            'Day 4: Drive to Varkala with en route visit to Jatayu Earth’s Center. Explore Varkala Cliff, beach, cafes, shopping, and sunset view. Overnight stay at Varkala.',
+            'Day 5: Drive to Trivandrum. Visit options include Trivandrum Zoo, Kovalam Beach and Lighthouse, Ayurveda spa, and mangrove forest. Overnight stay at Trivandrum.',
+            'Day 6: Trivandrum sightseeing including Padmanabhaswamy Temple and Azhimala Shiva Temple, followed by drop at Trivandrum Airport or Railway Station.'
+        ]
+    },
+    {
+        title: '6 Days – Munnar, Thekkady, Alappuzha, Varkala, Trivandrum',
+        days: '6 Days / 5 Nights',
         pickup: '950 Kms',
         travel: 'All Sightseeing',
-        price: '₹19,400',
+        price: '₹18,800',
         badge: '',
-        routeTags: ['Cochin', 'Munnar', 'Thekkady', 'Alleppey', 'Varkala', 'Trivandrum'],
+        routeTags: ['Kochi', 'Munnar', 'Thekkady', 'Alappuzha', 'Varkala', 'Trivandrum'],
         itinerary: [
-            'Day 1-2: Cochin to Munnar sightseeing and stay.',
-            'Day 3: Thekkady wildlife and spice plantations.',
-            'Day 4: Alappuzha backwater experience.',
-            'Day 5: Varkala beach and cliff views.',
-            'Day 6-7: Trivandrum city highlights and departure.'
+            'Day 1: Kochi to Munnar pickup and transfer. En route visit Cheeyappara and Valara Waterfalls, spice plantation, and tea garden views. Optional Kathakali or Kalaripayattu in the evening.',
+            'Day 2: Full day Munnar sightseeing with Eravikulam National Park, Tea Museum, Rose Garden, Photo Point, Mattupetty Dam, and Echo Point. Optional sunrise jeep safari.',
+            'Day 3: Drive to Thekkady. Visit Periyar Wildlife Sanctuary, enjoy boating in Periyar Lake, optional elephant ride, and cultural shows.',
+            'Day 4: Drive to Alappuzha and check in to houseboat or hotel. Experience backwater village views, canal cruise, and optional Shikara ride.',
+            'Day 5: Drive to Varkala with en route visit to Jatayu Earth’s Center. Explore Varkala Cliff, Varkala Beach, and sunset views.',
+            'Day 6: Drive to Trivandrum. Optional Padmanabhaswamy Temple, Azhimala Shiva Temple, and TVM Zoo, followed by drop at Airport or Railway Station.'
         ]
     },
     {
-        title: '5 Days 4 Nights Kochi–Munnar–Thekkady–Alappuzha–Kochi',
-        days: '5 Days / 4 Nights',
-        pickup: '550 Kms',
-        travel: 'All Sightseeing Included',
-        price: '₹11,800',
-        badge: 'Most Popular',
-        routeTags: ['Kochi', 'Munnar', 'Thekkady', 'Alappuzha', 'Kochi'],
+        title: '7 Days – Kochi, Munnar, Thekkady, Alappuzha, Varkala, Trivandrum',
+        days: '7 Days / 6 Nights',
+        pickup: '1000 Kms',
+        travel: 'All Sightseeing',
+        price: '₹20,200',
+        badge: '',
+        routeTags: ['Kochi', 'Munnar', 'Thekkady', 'Alappuzha', 'Varkala', 'Trivandrum'],
         itinerary: [
-            'Day 1: On arrival at Cochin Airport or Railway Station, our driver-cum-guide welcomes you and drives to Munnar. En route visit Valara and Cheeyappara waterfalls and a spice plantation. Overnight stay at Munnar resort/hotel.',
-            'Day 2: Morning pickup for Munnar sightseeing: Tea Plantations, Chithirapuram viewpoint, Rajamalai (Eravikulam National Park), Tea Museum, Rose Garden, Mattupetty Dam, and Echo Point. Drop back to Munnar resort/hotel.',
-            'Day 3: Morning pickup after breakfast and drive to Thekkady. Check-in at hotel. Sightseeing includes Periyar Wildlife Sanctuary, spice plantations, Cultural Show Center, and elephant camp. Overnight at Thekkady.',
-            'Day 4: Morning pickup after breakfast and drive to Alleppey. Drop at the houseboat for overnight backwater journey.',
-            'Day 5: Morning pickup after breakfast. Visit Fort Kochi Beach and Chinese Fishing Nets. Drop at airport or railway station for onward journey.'
+            'Day 1: Arrival at Kochi. Pickup from Kochi Airport or Railway Station. Visit Fort Kochi, Mattanchery Palace, Jew Street, Chinese Fishing Nets, and Marine Drive. Overnight stay at Kochi.',
+            'Day 2: Drive from Kochi to Munnar. En route visit Cheeyappara and Valara Waterfalls, spice plantation, and tea garden views. Overnight stay at Munnar.',
+            'Day 3: Munnar sightseeing with optional sunrise jeep safari, Eravikulam National Park, Tea Museum, Mattupetty Dam, Echo Point, Rose Garden, and Photo Point. Overnight stay at Munnar.',
+            'Day 4: Drive to Thekkady. Visit Periyar Wildlife Sanctuary, boating in Periyar Lake, spice plantation, and evening cultural shows. Overnight stay at Thekkady.',
+            'Day 5: Drive to Alappuzha. Check in to houseboat or hotel and enjoy canal cruise, village views, and optional Shikara ride. Overnight stay at Alappuzha.',
+            'Day 6: Drive to Varkala with en route visit to Jatayu Earth’s Center. Visit Varkala Cliff, Varkala Beach, and sunset views. Overnight stay at Varkala.',
+            'Day 7: Drive to Trivandrum. Visit Sree Padmanabhaswamy Temple, Azhimala Shiva Temple, Kovalam Beach, and Lighthouse, then drop at Trivandrum Airport or Railway Station.'
+        ]
+    },
+    {
+        title: '8 Days – Kochi, Munnar, Thekkady, Alappuzha, Varkala, Trivandrum, Kanyakumari',
+        days: '8 Days / 7 Nights',
+        pickup: '1200 Kms',
+        travel: 'All Sightseeing',
+        price: '₹24,000',
+        badge: 'Premium',
+        routeTags: ['Kochi', 'Munnar', 'Thekkady', 'Alappuzha', 'Varkala', 'Trivandrum', 'Kanyakumari'],
+        itinerary: [
+            'Day 1: Arrival at Kochi. Pickup from Kochi Airport or Railway Station and hotel check-in. Visit Fort Kochi, Chinese Fishing Nets, and Marine Drive. Overnight stay at Kochi.',
+            'Day 2: Drive to Munnar through scenic routes. En route visit Cheeyappara Waterfalls, Valara Waterfalls, spice plantations, and tea garden views. Overnight stay at Munnar.',
+            'Day 3: Munnar local sightseeing with optional sunrise jeep safari. Visit Eravikulam National Park, Tea Museum, Mattupetty Dam, Echo Point, Rose Garden, and Photo Point. Overnight stay at Munnar.',
+            'Day 4: Drive to Thekkady. Visit Periyar Wildlife Sanctuary, boating in Periyar Lake, spice plantation tour, and cultural shows. Overnight stay at Thekkady.',
+            'Day 5: Drive to Alappuzha. Check in to houseboat or hotel and enjoy backwater canal cruise, village views, and optional Shikara ride. Overnight stay at Alappuzha.',
+            'Day 6: Drive to Varkala via Jadayu Earth Centre. Visit Varkala Cliff, Varkala Beach, and sunset view. Overnight stay at Varkala.',
+            'Day 7: Drive to Trivandrum. Visit Padmanabhaswamy Temple, Azhimala Shiva Temple, TVM Zoo, mangrove forest, and Kovalam Beach. Overnight stay at Trivandrum.',
+            'Day 8: Early morning Kanyakumari sightseeing including sunrise, Vivekananda Rock Memorial, and Thiruvalluvar Statue, then drive back to Trivandrum for airport or railway station drop.'
         ]
     }
-    ];
+];
 
     const vehicles = [
     {
@@ -113,7 +152,8 @@
                         <div class="kms">${pkg.pickup}</div>
                     </div>
                 </div>
-                <a href="#contact" class="btn btn-primary">Book Now</a>
+                <a href="#contact" class="btn btn-primary">Book Now @ ₹2000</a>
+                <p class="balance-note"><em>*Balance payment on arrival</em></p>
             </div>
     </article>
     `).join('');
@@ -157,7 +197,7 @@
     const itineraryContent = document.getElementById('itineraryModalContent');
     const closeItineraryModal = document.getElementById('closeItineraryModal');
 
-    packageGrid.addEventListener('click', (event) => {
+packageGrid.addEventListener('click', (event) => {
     const itineraryLink = event.target.closest('.itinerary-link');
     if (!itineraryLink) return;
 
@@ -166,8 +206,93 @@
     const selectedPackage = packages[index];
     if (!selectedPackage) return;
 
-    itineraryTitle.textContent = selectedPackage.title;
-    itineraryContent.innerHTML = selectedPackage.itinerary.map(day => `<p>${day}</p>`).join('');
+    itineraryTitle.textContent = '';
+
+    itineraryContent.innerHTML = `
+        <div class="pdf-itinerary-sheet">
+            <div class="pdf-itinerary-top">
+                <div class="pdf-brand">VADERIL HOLIDAYS</div>
+                <div class="pdf-sheet-badge">${selectedPackage.badge || 'Kerala Package'}</div>
+            </div>
+
+            <div class="pdf-itinerary-hero">
+                <div class="pdf-itinerary-hero-text">
+                    <p class="pdf-route-label">PACKAGE OVERVIEW</p>
+                    <h3>${selectedPackage.title}</h3>
+                    <p class="pdf-subline">${selectedPackage.days}</p>
+
+                    <div class="pdf-route-tags">
+                        ${selectedPackage.routeTags.map(tag => `<span>${tag}</span>`).join('')}
+                    </div>
+                </div>
+
+                <div class="pdf-price-box">
+                    <div class="pdf-price-label">Starting From</div>
+                    <div class="pdf-price-value">${selectedPackage.price}</div>
+                    <div class="pdf-km-value">${selectedPackage.pickup}</div>
+                </div>
+            </div>
+
+            <div class="pdf-inclusion-strip">
+                <span>🚗 Pickup & Drop</span>
+                <span>🗺️ All Sightseeing</span>
+                <span>🅿️ Toll & Parking</span>
+                <span>👤 Driver Bata</span>
+                <span>⛽ Fuel Expense</span>
+            </div>
+
+            <div class="pdf-section">
+                <h4>Detailed Itinerary</h4>
+                <div class="pdf-day-list">
+                    ${selectedPackage.itinerary.map((day, i) => {
+        const parts = day.split(':');
+        const heading = parts.length > 1 ? parts.shift() : `Day ${i + 1}`;
+        const details = parts.length > 0 ? parts.join(':').trim() : day;
+
+        return `
+                            <article class="pdf-day-card">
+                                <div class="pdf-day-number">${i + 1}</div>
+                                <div class="pdf-day-content">
+                                    <h5>${heading}</h5>
+                                    <p>${details}</p>
+                                </div>
+                            </article>
+                        `;
+    }).join('')}
+                </div>
+            </div>
+
+            <div class="pdf-note-grid">
+                <div class="pdf-note-card pdf-note-card-green">
+                    <h4>Package Includes</h4>
+                    <ul>
+                        <li>Driver allowance</li>
+                        <li>Fuel charges</li>
+                        <li>Parking charges</li>
+                        <li>Pickup and drop</li>
+                        <li>All sightseeing by cab</li>
+                    </ul>
+                </div>
+
+                <div class="pdf-note-card">
+                    <h4>Important Notes</h4>
+                    <ul>
+                        <li>Entry tickets, boating, and activity charges are extra.</li>
+                        <li>Houseboat / hotel booking can be customized on request.</li>
+                        <li>Extra kilometer charges apply beyond package limit.</li>
+                        <li>Balance payment on arrival.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pdf-footer-bar">
+                <span>Direct Booking</span>
+                <span>Customizable Itinerary</span>
+                <span>Professional Travel Services</span>
+            </div>
+        </div>
+    `;
+
     itineraryModal.classList.add('open');
 });
 
