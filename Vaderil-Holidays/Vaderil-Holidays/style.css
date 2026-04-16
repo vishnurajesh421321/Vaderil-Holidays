@@ -621,10 +621,9 @@ button {
 }
 
 .itinerary-modal-close {
-    position: sticky;
+    position: absolute;
     top: 14px;
-    float: right;
-    margin: 14px 14px 0 0;
+    right: 14px;
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -650,7 +649,7 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 22px 26px 0;
+    padding: 50px 26px 0;
 }
 
 .pdf-brand {
