@@ -1,7 +1,6 @@
 const packages = [
     {
-        title: '5 Days – Munnar, Thekkady, Alappuzha',
-        days: '5 Days / 4 Nights',
+        title: '5 Days & 4 Nights',
         pickup: '550 Kms',
         travel: 'All Sightseeing',
         price: '₹11,800',
@@ -16,8 +15,7 @@ const packages = [
         ]
     },
     {
-        title: '5 Days – Athirappilly, Munnar, Thekkady, Alappuzha',
-        days: '5 Days / 4 Nights',
+        title: '5 Days / 4 Nights',
         pickup: '650 Kms',
         travel: 'All Sightseeing',
         price: '₹13,400',
@@ -32,8 +30,7 @@ const packages = [
         ]
     },
     {
-        title: '6 Days – Munnar, Alappuzha, Varkala, Trivandrum',
-        days: '6 Days / 5 Nights',
+        title: '6 Days & 5 Nights',
         pickup: '850 Kms',
         travel: 'All Sightseeing',
         price: '₹18,800',
@@ -49,8 +46,7 @@ const packages = [
         ]
     },
     {
-        title: '6 Days – Munnar, Thekkady, Alappuzha, Varkala, Trivandrum',
-        days: '6 Days / 5 Nights',
+        title: '6 Days & 5 Nights',
         pickup: '950 Kms',
         travel: 'All Sightseeing',
         price: '₹18,800',
@@ -66,8 +62,7 @@ const packages = [
         ]
     },
     {
-        title: '7 Days – Kochi, Munnar, Thekkady, Alappuzha, Varkala, Trivandrum',
-        days: '7 Days / 6 Nights',
+        title: '7 Days & 6 Nights',
         pickup: '1000 Kms',
         travel: 'All Sightseeing',
         price: '₹20,200',
@@ -84,8 +79,7 @@ const packages = [
         ]
     },
     {
-        title: '8 Days – Kochi, Munnar, Thekkady, Alappuzha, Varkala, Trivandrum, Kanyakumari',
-        days: '8 Days / 7 Nights',
+        title: '8 Days & 7 Nights',
         pickup: '1200 Kms',
         travel: 'All Sightseeing',
         price: '₹24,000',
@@ -130,7 +124,6 @@ const packages = [
             <div class="package-head">
                 <div>
                     <h4>${pkg.title}</h4>
-                    <p class="days-text">${pkg.days}</p>
                 </div>
                 ${pkg.badge ? `<span class="badge">${pkg.badge}</span>` : ''}
                 <div class="package-meta">
