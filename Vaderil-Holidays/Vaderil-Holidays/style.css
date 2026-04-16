@@ -1,13 +1,13 @@
 :root {
-    --primary: #1f8f8c;
-    --primary-dark: #156e6a;
-    --accent: #dff1ef;
-    --bg: #f5fbfa;
+    --primary: #7db142;
+    --primary-dark: #648f35;
+    --accent: #edf5e3;
+    --bg: #f7fbf1;
     --card: #ffffff;
     --text: #1b2328;
     --muted: #66747c;
     --border: #dde9e7;
-    --shadow: 0 12px 30px rgba(19, 63, 62, 0.08);
+    --shadow: 0 12px 30px rgba(77, 112, 37, 0.12);
     --radius: 18px;
     --radius-sm: 14px;
     --container: 1180px;
@@ -19,7 +19,7 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     color: var(--text);
-    background: linear-gradient(180deg, #edf8f6 0%, #f8fcfc 100%);
+    background: linear-gradient(180deg, #f1f9e8 0%, #fbfdf8 100%);
 }
 
 img { max-width: 100%; display: block; }
@@ -53,8 +53,8 @@ header {
     top: 0;
     z-index: 40;
     backdrop-filter: blur(14px);
-    background: rgba(245, 251, 250, 0.8);
-    border-bottom: 1px solid rgba(31, 143, 140, 0.1);
+    background: rgba(247, 251, 241, 0.85);
+    border-bottom: 1px solid rgba(125, 177, 66, 0.2);
 }
 
 .nav {
@@ -124,15 +124,15 @@ button {
 .btn:hover { transform: translateY(-1px); }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary) 0%, #34b4ab 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, #98c95f 100%);
     color: white;
-    box-shadow: 0 12px 24px rgba(31, 143, 140, 0.22);
+    box-shadow: 0 12px 24px rgba(125, 177, 66, 0.28);
 }
 
 .btn-outline {
     background: white;
     color: var(--primary);
-    border: 1px solid rgba(31, 143, 140, 0.25);
+    border: 1px solid rgba(125, 177, 66, 0.3);
 }
 
 .menu-toggle {
@@ -440,7 +440,7 @@ button {
     background: rgba(255,255,255,0.75);
     padding: 16px;
     border-radius: 18px;
-    border: 1px solid rgba(31, 143, 140, 0.12);
+    border: 1px solid rgba(125, 177, 66, 0.2);
 }
 
 .why-bullet {
